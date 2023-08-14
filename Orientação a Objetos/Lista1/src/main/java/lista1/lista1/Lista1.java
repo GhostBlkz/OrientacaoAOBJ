@@ -17,12 +17,18 @@ public class Lista1 {
         obj2.quantidade = 20;
         obj2.preco = 1.2f;
         
-        System.out.println("Codigo: "+obj1.codigo+ " Nome: "+obj1.nome+ " Descrição: "+obj1.descricao+" quantidade: "+obj1.quantidade+" Preço: "+
-                obj1.preco);
-        System.out.println("Codigo: "+obj2.codigo+ " Nome: "+obj2.nome+ " Descrição: "+obj2.descricao+" quantidade: "+obj2.quantidade+" Preço: "+
-                obj2.preco);
+        //exibe dados do obj1
+        obj1.exibeDados();
+        //exibe dados do obj2
+        obj2.exibeDados();
         
-        
+         obj1.comprar(5);
+         obj2.comprar(8);
+         obj1.vender(16);
+        //exibe dados do obj1
+        obj1.exibeDados();
+        //exibe dados do obj2
+        obj2.exibeDados(); 
                 
     }
 }
