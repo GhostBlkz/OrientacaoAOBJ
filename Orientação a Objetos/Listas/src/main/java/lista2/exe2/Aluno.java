@@ -40,6 +40,7 @@ public class Aluno {
     public final void setIdade(int idade) {
         if(idade <= 0){
             System.out.println("Idade Negativa");
+            
         }
         else{
         this.idade = idade;
@@ -57,7 +58,7 @@ public class Aluno {
             
     }
 
-    public void setP2(float p2) {
+    public final void setP2(float p2) {
        if(p2 >= 0 && p2 <=10){
         this.p2 = p2;
         }
@@ -65,6 +66,14 @@ public class Aluno {
             System.out.println("Nota negativa!!");
         }
     }
+    
+    public void notaFinal(){
+        System.out.println("Nota Final: "+(this.p1+this.p2)/2);
+    }
+    public void dadosAluno(){
+        System.out.println("Nome: "+this.nome+"\nNumero: "+this.numeroAluno+"\nIdade: "+this.idade);
+    }
+    
 
     public int getNumeroAluno() {
         return numeroAluno;
