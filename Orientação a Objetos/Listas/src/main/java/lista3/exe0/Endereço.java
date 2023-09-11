@@ -8,7 +8,7 @@ public class Endereço {
     public Endereço() {
     }
 
-    public Endereço(int id, String nome, String bairro, String cep, String cidade, String pais, int numero) {
+    public Endereço(int id, String nome, String bairro, String cep, String cidade, String pais) {
         this.setId(id);
         this.setNome(nome);
         this.setBairro(bairro);
