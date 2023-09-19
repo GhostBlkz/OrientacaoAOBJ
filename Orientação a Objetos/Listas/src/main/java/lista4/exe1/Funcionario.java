@@ -1,6 +1,9 @@
 package lista4.exe1;
-
-public class Funcionario {
+//classe abstrata não pode ser instanciada
+//classe abstrata pode ter métodods abstratos, que não são implementados nas classes
+//mas devem ser implementados nas classes filhas
+//classe abstrata é sempre uma classe pai ou superclasse
+public abstract class Funcionario {
     protected String nome, endereco, cpf;
     protected float salario;
 
@@ -51,7 +54,5 @@ public class Funcionario {
         return "Funcionario{" + "nome=" + nome + ", endereco=" + endereco + ", cpf=" + cpf + ", salario=" + salario + '}';
     }
     
-    public float calculaSalario(){
-        return this.salario;
-    }
+    public abstract float calculaSalario();
 }
